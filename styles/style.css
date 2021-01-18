@@ -1,0 +1,56 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+#appcontainer {
+    height: 100%;
+}
+#appbox{
+    height: 100%;
+    width: 100%;
+}
+.noodle{
+    fill:none;
+    stroke:blueviolet;
+    stroke-width: 2px;
+}
+.dnode{
+    fill: #ffc2c2;
+}
+.title{
+    font-family: Noto Mono;
+    width:100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+.input{
+    fill:#7ce3ff;
+    stroke:#444444;
+    stroke-width: 1.5;
+}
+.output{
+    fill:#ffbb7c;
+    stroke:#444444;
+    stroke-width: 1.5;
+}
+.knife{
+    fill:none;
+    stroke:red;
+    stroke-width: 2px;
+    stroke-dasharray: 7 7;
+}
+.bbox{
+    stroke:blue;
+    stroke-width: 1;
+    fill: rgb(120, 212, 255);
+    opacity: 25%;
+}
+.selected{
+    stroke: #101010;
+    stroke-width: 1px;
+}
