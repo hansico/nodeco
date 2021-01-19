@@ -4,25 +4,6 @@ var selector = new SelectionManager();
 
 function runApp(){
     addEventLogic();
-    loadall();
-}
-
-function loadall(){
-    fetch('../showall',{headers: {Accept:'application/json'}})
-    .then((response)=>{
-        return response.json();
-    })
-    .then((data)=>{
-        var i = 50;
-        data.forEach(element => {
-            let id = uniq();
-            var dnode = new Dnode(id,element.fields);
-            var dnodevis = new Dnode_vis(dnode,{x:75, y: i});
-            allnodes[id] = dnode;
-            dnode.view = dnodevis;
-            i += 48;
-        });
-    })
 }
 
 function addEventLogic(){

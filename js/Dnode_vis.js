@@ -19,6 +19,7 @@ class Dnode_vis{
     }
 
     createDnode(){
+        // TODO: Works for now, clean up required
         var appbox = document.getElementById("appbox");
         var g = document.createElementNS("http://www.w3.org/2000/svg","g");
         g.setAttributeNS(null,'id',this.dnode.id);
